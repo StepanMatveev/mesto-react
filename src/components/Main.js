@@ -25,16 +25,16 @@ function Main({onEditAvatar, onEditProfile, onAddPlace, onCardClick}) {
         <section className="profile">
             <div className="profile__avatar_container">
                 <img className="profile__avatar" alt="Аватарка" src={userAvatar}/>
-                <button className="profile__avatar-overlay" onClick={onEditAvatar}></button>
+                <button className="profile__avatar-overlay" onClick={onEditAvatar}/>
             </div>
             <div className="profile__info">
                 <div className="profile__top">
                     <h1 className="profile__title">{userName}</h1>
-                    <button className="profile__edit-button" type="button" aria-label="редактировать" onClick={onEditProfile}></button>
+                    <button className="profile__edit-button" type="button" aria-label="редактировать" onClick={onEditProfile}/>
                 </div>
             <p className="profile__subtitle">{userSubtitle}</p>
             </div>
-            <button className="profile__add-button" type="button" aria-label="добавить" onClick={onAddPlace}></button>    
+            <button className="profile__add-button" type="button" aria-label="добавить" onClick={onAddPlace}/>  
         </section>
         <section className="elements">
             <ul className="elements__list">
