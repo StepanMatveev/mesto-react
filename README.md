@@ -28,7 +28,7 @@
 
 
 ### Ссылка
-[Mesto](https://stepanmatveev.github.io/mesto)
+[Mesto](https://stepanmatveev.github.io/mesto-react/)
 
 
 ### Разработчик
