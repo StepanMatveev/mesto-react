@@ -14,17 +14,12 @@ class Api {
         }
     }
 
-    _handleError (error) {
-        console.error(error)
-        return Promise.reject(error.message)
-    }
-
     getUserInfo() {
         return fetch(`${this.url}/users/me`, {
             method: 'GET',
             headers: this.headers
         })
-        .then(this._handleResponse); 
+        .then(this._handleResponse);  
     }
 
     getInitialCards() {
@@ -32,7 +27,7 @@ class Api {
             method: 'GET',
             headers: this.headers
         })
-        .then(this._handleResponse); 
+        .then(this._handleResponse);  
     }
 
     editUserInfo(name, about) {
@@ -44,7 +39,7 @@ class Api {
                 about: about
               })
         })
-        .then(this._handleResponse); 
+        .then(this._handleResponse);  
     }
 
     changeAvatar(url) {
@@ -55,7 +50,7 @@ class Api {
                 avatar: url
                 })
         })
-        .then(this._handleResponse);
+        .then(this._handleResponse);  
     }
 
     addCard(name, link) {
@@ -67,7 +62,7 @@ class Api {
                 link: link
               })
         })
-        .then(this._handleResponse); 
+        .then(this._handleResponse);  
     }
 
     deleteCard(id) {
