@@ -31,7 +31,7 @@ function Main({onEditAvatar, onEditProfile, onAddPlace, onCardClick, cards, hand
                         onCardClick={onCardClick}
                         onLikeClick={handleCardLike}
                         onCardDelete={handleCardDelete}
-                />
+                    />
                 )}
             </ul>
         </section>

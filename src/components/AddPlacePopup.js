@@ -28,40 +28,40 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
 
     return (
         <PopupWithForm
-          name="add-place"
-          title="Новое место"
-          isOpen={isOpen}
-          onClose={onClose}
-          onSubmit={handleSubmit}
-          submitText={`${isLoading ? "Сохранение..." : "Сохранить"}`}        
+            name="add-place"
+            title="Новое место"
+            isOpen={isOpen}
+            onClose={onClose}
+            onSubmit={handleSubmit}
+            submitText={`${isLoading ? "Сохранение..." : "Сохранить"}`}        
         >
-          <label className="popup__field">
-              <input 
-                  className="popup__input popup__input_pic-name" 
-                  type="text" 
-                  placeholder="Название" 
-                  name="place"
-                  id="place"
-                  value={name || ''} 
-                  onChange={handleChangeName} 
-                  required
-              />
-              <span className="popup__input-error" id="place-error"></span>
-          </label>    
-          <label className="popup__field">
-              <input 
-                  className="popup__input popup__input_link" 
-                  type="url" 
-                  placeholder="Ссылка на картинку" 
-                  name="link" 
-                  id="link"
-                  value={link || ''}
-                  onChange={handleChangeLink} 
-                  required
-              />
-              <span className="popup__input-error" id="link-error"></span>
-          </label>        
-      </PopupWithForm>
+            <label className="popup__field">
+                <input 
+                    className="popup__input popup__input_pic-name" 
+                    type="text" 
+                    placeholder="Название" 
+                    name="place"
+                    id="place"
+                    value={name || ''} 
+                    onChange={handleChangeName} 
+                    required
+                />
+            <span className="popup__input-error" id="place-error"></span>
+            </label>    
+            <label className="popup__field">
+                <input 
+                    className="popup__input popup__input_link" 
+                    type="url" 
+                    placeholder="Ссылка на картинку" 
+                    name="link" 
+                    id="link"
+                    value={link || ''}
+                    onChange={handleChangeLink} 
+                    required
+                />
+            <span className="popup__input-error" id="link-error"></span>
+            </label>        
+        </PopupWithForm>
     )
 }
 
